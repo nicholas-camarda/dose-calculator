@@ -1,7 +1,7 @@
 library(shiny)
 library(tidyverse)
 library(lubridate)
-library(DT) # Ensure this is installed using install.packages("DT")
+library(DT)
 
 ui <- fluidPage(
     titlePanel("Vehicle and Treatment Dosage Calculator"),
@@ -100,7 +100,10 @@ server <- function(input, output, session) {
             exp_start <- as.character(format(input$experiment_date[2] - as.integer(input$total_treatment_days)))
 
             data.frame(
-                Detail = c("Project Name", "Baseline Date Range", "Experiment Date Range", "Total Treatment Days", "Experiment Days (including harvest day)", "Harvest Day"),
+                Detail = c(
+                    "Project Name", "Baseline Date Range", "Experiment Date Range", "Total Treatment Days",
+                    "Experiment Days (including harvest day)", "Harvest Day"
+                ),
                 Value = c(
                     as.character(input$project_name),
                     paste(as.character(format(input$experiment_date[1])), "to", baseline_end),
