@@ -2,6 +2,7 @@ library(shiny)
 library(tidyverse)
 library(lubridate)
 library(DT)
+library(rsconnect)
 
 ui <- fluidPage(
     titlePanel("Vehicle and Treatment Dosage Calculator"),

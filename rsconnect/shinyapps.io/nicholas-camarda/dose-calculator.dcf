@@ -1,0 +1,10 @@
+name: dose-calculator
+title:
+username: nicholas-camarda
+account: nicholas-camarda
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11618028
+bundleId: 8432511
+url: https://nicholas-camarda.shinyapps.io/dose-calculator/
+version: 1
