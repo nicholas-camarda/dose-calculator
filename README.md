@@ -11,7 +11,11 @@ This Shiny application provides a user-friendly interface for calculating the vo
 
 ## Usage
 
-To use the calculator, follow these steps:
+Click the URL to access the App here: 
+
+https://nicholas-camarda.shinyapps.io/dose-calculator/
+
+Then, to use the calculator, follow these steps:
 
 1. **Set General Information:**
    - Input the `Project Name`.
